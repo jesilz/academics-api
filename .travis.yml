@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 2.1.6
+  - 2.2.2
+services:
+  - mongodb
+cache: bundler
+before_script:
+  - cp config/mongoid.yml.example config/mongoid.yml
+script: bundle exec rspec
+sudo: false
