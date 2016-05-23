@@ -21,6 +21,7 @@ module AcademicsAPI
       end
         
       # APIs
+      mount TransferSchoolsAPI
     end
   end
 end
